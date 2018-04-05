@@ -1,2 +1,2 @@
-# TicTacToeAI
-Tic Tac Toe Game Using Minimax Algorithm
+# Tic Tac Toe AI
+Tic Tac Toe Game With Minimax Algorithm AI
