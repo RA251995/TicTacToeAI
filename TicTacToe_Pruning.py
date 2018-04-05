@@ -78,8 +78,6 @@ def score(board):
 
 
 def maximize(board, alpha, beta):
-    global depth
-    depth += 1
     if score(board) != 0:
         return [None, score(board)]
 
@@ -126,7 +124,7 @@ def minimize(board, alpha, beta):
 
     return minChild, minUtility
 
-global depth
+
 print('Welcome to Tic Tac Toe!')
 while True:
     # Reset the board
@@ -156,7 +154,6 @@ while True:
                     turn = 'Computer'
         else:
             # Computer’s turn.
-            depth = 0
             move = getComputerMove(theBoard)
             makeMove(theBoard, computerLetter, move)
             if isWinner(theBoard, computerLetter):
@@ -170,6 +167,5 @@ while True:
                     break
                 else:
                     turn = 'Player'
-            print("Depth:", depth)
     if not playAgain():
         break
