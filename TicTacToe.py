@@ -140,8 +140,7 @@ while True:
                 else:
                     turn = 'Computer'
         else:
-            # Computer’s turn.
-            depth = 0
+            # Computer’s turn
             move = getComputerMove(theBoard)
             makeMove(theBoard, computerLetter, move)
             if isWinner(theBoard, computerLetter):
